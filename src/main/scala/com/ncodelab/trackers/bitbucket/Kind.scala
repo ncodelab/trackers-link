@@ -2,9 +2,9 @@ package com.ncodelab.trackers.bitbucket
 
 import com.fasterxml.jackson.core.`type`.TypeReference
 
-object IssueKind extends Enumeration {
-  type IssueKind = Value
+object Kind extends Enumeration {
+  type Kind = Value
   val bug, enhancement, proposal, task = Value
 }
 
-class IssueKindType extends TypeReference[IssueKind.type]
+class IssueKindType extends TypeReference[Kind.type]
