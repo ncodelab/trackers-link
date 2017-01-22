@@ -25,7 +25,7 @@ class BitbucketSpec extends FlatSpec with Matchers {
       new Date()
     )
 
-    val dataCreated = bb.writeIssue(issue)
+    val dataCreated = bb.createIssue(issue)
     dataCreated shouldBe defined
     dataCreated.get.id shouldBe defined
     val issueCreated = dataCreated.get
